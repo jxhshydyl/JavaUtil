@@ -1,4 +1,4 @@
-package com.lwp.util;
+package com.lwp.util.excel;
 
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.HorizontalAlignment;
@@ -29,8 +29,9 @@ public class ExcelUtil {
         // 第四步，创建单元格，并设置值表头 设置表头居中
         HSSFCellStyle style = wb.createCellStyle();
         //HorizontalAlignment.Center;  HSSFCellStyle.ALIGN_CENTER
-        style.setAlignment(HorizontalAlignment.CENTER); // 创建一个居中格式
- 
+        // 创建一个居中格式
+        style.setAlignment(HSSFCellStyle.ALIGN_CENTER);
+
         //声明列对象
         HSSFCell cell = null;
  

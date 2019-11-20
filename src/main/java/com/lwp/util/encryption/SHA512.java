@@ -1,4 +1,4 @@
-package com.lwp.util;
+package com.lwp.util.encryption;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

@@ -6,6 +6,7 @@ import com.aliyun.oss.model.Bucket;
 import com.aliyun.oss.model.OSSObject;
 import com.aliyun.oss.model.ObjectMetadata;
 import com.aliyun.oss.model.PutObjectResult;
+import com.lwp.util.image.ImageCompressUtil;
 import net.coobird.thumbnailator.Thumbnails;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -263,8 +264,9 @@ public class OSSUtil {
      * @return
      */
     public String getUrl(String key, String option) {
-        if (StringUtils.isBlank(key))
+        if (StringUtils.isBlank(key)){
             return "";
+        }
         return "http://" + bucketName + "." + endpoint + "/" + key + option;
     }
 
@@ -276,7 +278,7 @@ public class OSSUtil {
      */
     public String getUrl(String key) {
         // 设置URL过期时间为10年  3600l* 1000*24*365*10
-        Date expiration = new Date(new Date().getTime() + 3600l * 1000 * 24 * 365 * 10);
+        Date expiration = new Date(System.currentTimeMillis() + 3600L * 1000 * 24 * 365 * 10);
         OSSClient ossClient = ossClientStatic;
         // 生成URL
         URL url = ossClient.generatePresignedUrl(bucketName, key, expiration);

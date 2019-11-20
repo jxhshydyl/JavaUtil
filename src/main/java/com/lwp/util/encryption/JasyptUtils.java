@@ -1,4 +1,4 @@
-package com.lwp.util;
+package com.lwp.util.encryption;
 
 import org.jasypt.encryption.pbe.PooledPBEStringEncryptor;
 import org.jasypt.encryption.pbe.StandardPBEByteEncryptor;

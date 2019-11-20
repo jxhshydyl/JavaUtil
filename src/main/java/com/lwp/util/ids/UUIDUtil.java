@@ -1,4 +1,4 @@
-package com.lwp.util;
+package com.lwp.util.ids;
 
 import java.util.UUID;
 

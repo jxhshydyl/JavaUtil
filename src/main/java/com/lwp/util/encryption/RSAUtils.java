@@ -1,4 +1,4 @@
-package com.lwp.util;
+package com.lwp.util.encryption;
 
 import javax.crypto.Cipher;
 import java.io.ByteArrayOutputStream;

@@ -4,7 +4,7 @@
  * author: shiqun.shi@alipay.com
  */
 
-package com.lwp.util;
+package com.lwp.util.encryption;
 
 public final class Base64 {
 

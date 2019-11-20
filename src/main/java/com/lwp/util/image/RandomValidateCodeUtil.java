@@ -1,4 +1,4 @@
-package com.lwp.util;
+package com.lwp.util.image;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

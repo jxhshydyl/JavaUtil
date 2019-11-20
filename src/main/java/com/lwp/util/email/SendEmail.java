@@ -1,4 +1,4 @@
-package com.lwp.util;
+package com.lwp.util.email;
 
 import javax.mail.Session;
 import javax.mail.Transport;

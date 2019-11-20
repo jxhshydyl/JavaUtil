@@ -1,4 +1,4 @@
-package com.lwp.util;
+package com.lwp.util.date;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

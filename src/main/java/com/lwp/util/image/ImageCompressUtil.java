@@ -1,5 +1,5 @@
 
-package com.lwp.util;
+package com.lwp.util.image;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

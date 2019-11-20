@@ -1,4 +1,4 @@
-package com.lwp.util;
+package com.lwp.util.email;
 
 
 import com.sun.mail.util.MailSSLSocketFactory;
